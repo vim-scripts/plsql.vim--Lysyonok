@@ -1,0 +1,32 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4254
+
+Based on the standard syntax file for plsql.vim.
+
+New features ( comparing to the standard plsql.vim, contained in Vim 7.3):
+
+   1) Now you can use multilined literal strings. The string
+'A
+B
+C
+'   will be highlighted properly.
+
+
+   1) folding feature for procedures and functions ( including internal procedures and functions)
+for a simple example, the procedure "testProcedure" with comments will be folded: 
+
+declare
+
+  /*
+    Test procedure;    
+  */
+  procedure testProcedure
+  is
+  begin
+    null;
+  end testProcedure;
+  
+begin
+  testProcedure();
+end;
+
+
